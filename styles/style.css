@@ -1,0 +1,224 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body, html{
+    height: 100%;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+    height: auto;
+    z-index: -2;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+/* HEADER */
+
+header nav ul{
+    position: fixed;
+    height: 14px;
+    width: 77.5%;
+    display: flex;
+    list-style: none;
+    margin: 0 9.5%;
+    padding: 24px 0px 17px 0px;
+    top: 0px;
+    z-index:5;
+    background-color:#808080;
+    border-top: solid 30px #434b5a;
+}
+header nav ul a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li{
+    align-self: center;
+    padding: 25px;
+}
+header nav ul li:first-of-type{
+    padding:0;
+}
+header nav ul li:nth-of-type(2){
+    margin-left:auto;
+}
+
+/* BODY */
+h1{
+    display: flex;
+    color:white;
+    font-size: 38px;
+}
+p{
+    font-size: 22px;
+    color: white;
+}
+main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 10%;
+}
+/* HOME */
+main section:first-of-type ul{
+    top: 50%;
+    left: 5%;
+    position: relative;
+}
+main section:first-of-type ul li{
+    text-align: left;
+    width: 50%;
+}  
+main section:first-of-type img{
+    position: absolute;
+    display: flex;
+    margin: 0 10%;
+    top: 30%;
+    right: 2.5%;
+}
+/* ABOUT ME */
+main section:nth-of-type(2) {
+    text-align: center;
+}
+main section:nth-of-type(2) ul{
+    top: 40%;
+    position: relative;
+}
+main section:nth-of-type(2) ul li h1{
+    margin-left: 40%;
+}
+main section:nth-of-type(2) ul li p{
+    width: 88%;
+    margin-left: 5%;
+}
+.readmore{
+    display:inline-block;
+    height: 100px;
+    width: 260px;
+    background: transparent url("../images/readmore.png")no-repeat 0 0;
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+.readmore:hover{
+    background-position: 0 -112px;
+}
+/* PORTFOLIO */
+main section:nth-of-type(3) h1{
+    position: relative;
+    top: 18%;
+    margin: 0 10%;
+    left: 10px;
+}
+main section:nth-of-type(3) ul{
+    display: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    top: 20%;
+    position: relative;
+}
+main section:nth-of-type(3) li{
+    padding: 0 30px 20px 30px;
+}
+main section:nth-of-type(3) h3{
+    margin: 5px 0;
+    color: #808080;
+}
+main section:nth-of-type(3) a{
+    text-decoration: none;
+}
+main section:nth-of-type(3) a:hover{
+    text-decoration: underline;
+    text-decoration-color: #e9990c;
+    text-decoration-style: double;
+}
+/* CONTACT */
+main section:nth-of-type(4) h1{
+    position: relative;
+    margin: 0 10%;
+    top: 50%;
+}
+
+
+/* ABOUTME PAGE */
+
+main article{
+    position: relative;
+    margin: 10% 11.3%;
+    left: -1.7%;
+}
+main article h1{
+    justify-content: center;
+}
+main article span{
+    color:#e9990c;
+    opacity: 70%;
+}
+main article div:first-of-type{
+    width: 35%;
+    padding: 3px 10px;
+}
+main article p{
+    color: #808080;
+}
+main article div:nth-of-type(2){
+    width: 50%;
+    position: absolute;
+    right:0;
+    top: 0;
+    padding: 3px 10px;
+}
+main article div:last-of-type{
+    width: 50%;
+    position: absolute;
+    right:0;
+    top:40%;
+    padding: 3px 10px;
+}
+main article{
+    padding-bottom: 0;;
+}
+
+/* PORTFOLIO PAGE(s) */
+.desc{
+    position: relative;
+    margin: 10% 10% 5% 10%;
+    padding: 3px 10px;
+    width: 45%;
+}
+.main{
+    width: 350px;
+    position: absolute;
+    display: flex;
+    top: 10%;
+    right: 0;
+    margin: 10% 13%;
+}
+.desc p a{
+    color:#e9990c;
+}
+.hci{
+    position: relative;
+    left: -1%;
+}
+.hci ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+.hci li{
+    padding: 0 30px 20px 30px;
+    text-decoration: none;
+}
+.hci img{
+    width: 450px;
+}
